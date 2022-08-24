@@ -21,9 +21,6 @@ function Login() {
         e.preventDefault()
         setlogin({...login, [e.target.name]:e.target.value})
     }
-
-    console.log(enter?.user)
-
                 ///^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/
     function onSubmit(e){
         e.preventDefault()
@@ -32,7 +29,6 @@ function Login() {
             return (<Link to="/home"><Home /></Link>)
             
         } catch (error) {
-            console.log(error)
             alert(error)
         }
     }

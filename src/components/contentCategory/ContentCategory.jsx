@@ -5,20 +5,12 @@ import ContentSimple from '../contentSimple/ContentSimple';
 
 export default function ContentCategory(genre) {
 
-    console.log(genre.items)
     const filter=genre.items
     
     const dispatch= useDispatch()
 
     const data= useSelector(state=>state.genresFilter)
 
-    // useEffect(()=>{
-    //     function genres(name){
-    //         dispatch(genresFilter(name))
-    //     }
-    //     genres() 
-    // })
-    // console.log(data?.genresFilter)
 
     return (
         <div>

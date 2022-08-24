@@ -1,5 +1,6 @@
 import { GENRES, GENRES_FILTER, GET_DETAIL } from "../../components/constants/Constants";
 import data from '../../components/constants/videos.json';
+import info from '../../components/constants/info.json';
 
 export function genres(){
     return{
@@ -9,9 +10,7 @@ export function genres(){
 }
 
 export function genresFilter(genre){
-    console.log(genre)
     let filter =  data.filter(g=>g.name===genre)
-    console.log(filter[0].movie)
     return {
         type:GENRES_FILTER,
         payload:filter[0].movie
@@ -19,9 +18,10 @@ export function genresFilter(genre){
 }
 
 
-export function detailVideo(payload){
+export function detailVideo(id){
+    let filter =  info.filter(g=>g.id===id)
     return {
         type:GET_DETAIL,
-        payload:payload
+        payload:filter[0]
     }
 }

@@ -12,12 +12,6 @@ export default function Home (){
 
     const gen=info
 
-    const fil=filter?.movie
-
-    console.log(filter)
-    // const filter=info?.genresFilter.movies
-    // console.log(filter)
-
     useEffect(()=>{          
             dispatch(genres())
     },[])
@@ -29,13 +23,15 @@ export default function Home (){
     return (
     <div>
         <div>
-        <NavBar />
-        </div>
-        <div>
-            {gen?.map(a=> <button onClick={()=>contents(a.name)} key={a.name}>{a.name}</button>)}
-        </div>
-        <div>
-            {filter? <ContentCategory items={filter}/>:<div></div>}
+            <NavBar />
+            <div>
+                {gen?.map(a=> <button onClick={()=>contents(a.name)} key={a.name}>{a.name}</button>)}
+                <div>
+                    <div>
+                        {filter? <ContentCategory items={filter}/>:<div></div>}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     )
