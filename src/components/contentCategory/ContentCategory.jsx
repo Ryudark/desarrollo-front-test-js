@@ -1,19 +1,18 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { genresFilter } from '../../redux/action/actionInfo';
+import React from 'react'
+import { useSelector } from 'react-redux';
 import ContentSimple from '../contentSimple/ContentSimple';
+import NavBar from '../navBar/NavBar';
+import './ContentCategory.css'
 
-export default function ContentCategory(genre) {
+export default function ContentCategory() {
 
-    const filter=genre.items
-    
-    const dispatch= useDispatch()
+    // const filter=genre.items
+    const filter= useSelector(state=>state.genresFilter)
 
-    const data= useSelector(state=>state.genresFilter)
-
-
+    console.log(filter)
     return (
-        <div>
+        <div className='fondo'>
+            <NavBar />
             {filter.map(a=><ContentSimple key={a.id} a={a}/>)}
         </div>
     )

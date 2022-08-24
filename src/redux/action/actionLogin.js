@@ -1,5 +1,4 @@
-import axios from "axios"
-import { GET, GET_DETAIL, LOGIN } from "../../components/constants/Constants"
+import { LOGIN } from "../../components/constants/Constants"
 import data from '../../components/constants/user.json';
 
 export function log(payload){
@@ -15,7 +14,7 @@ export function log(payload){
         }
         else{
             // eslint-disable-next-line no-throw-literal
-            throw "Contraseña Equivocada"
+            throw "Datos Incorrectos"
         }
     }
     else{

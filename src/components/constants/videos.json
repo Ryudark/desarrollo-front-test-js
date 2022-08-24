@@ -1,6 +1,8 @@
 [
     {
         "name":"Accion",
+        "info":"Peliculas con alto contenido de escenas de riesgo",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXq5YYA_MGmeRr-MtvNEEgGa4sXDwF0keFg&usqp=CAU",
         "movie":
         [
             {   
@@ -21,12 +23,14 @@
             {
                 "id":"4",
                 "name":"Sin tiempo para morir",
-                "img":"https://pics.filmaffinity.com/Sin_tiempo_para_morir-279617594-large.jpg"
+                "img":"https://es.web.img3.acsta.net/pictures/21/09/09/10/40/0885856.jpg"
             }
         ]
     },
     {
         "name":"Aventura",
+        "info":"Adentrate a diferentes mundos y disfruta",
+        "img":"https://www.reddircom.org/wp-content/uploads/2019/11/Adventure-Travel.jpg",
         "movie":
         [
             {
@@ -37,12 +41,12 @@
             {
                 "id":"6",
                 "name":"Jumanji: The Next Level",
-                "img":"https://pics.filmaffinity.com/Jumanji_Siguiente_nivel-414877263-large.jpg"
+                "img":"https://1.bp.blogspot.com/-mSljNGBhUaI/Xfq4MmNTaBI/AAAAAAAAPYw/DdtIUbgJaXgCbUL3WMOE0tRS4NyT4TbxgCLcBGAsYHQ/s1600/5dcc2b3ccff47e0030894d75-1125x750-1.jpeg"
             },
             {
                 "id":"7",
                 "name":"Toy Story 4",
-                "img":"https://static.wikia.nocookie.net/disney/images/5/5c/Toy_Story_4_official_poster_%282%29.jpg/revision/latest?cb=20190627043631&path-prefix=es"
+                "img":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/13BBBB0CB88A98CCAE6027E3408B05254A9BA852EE6E1CD1FB9C4DE53DA103BD/scale?width=506&aspectRatio=2.00&format=jpeg"
             },
             {
                 "id":"8",
@@ -53,6 +57,8 @@
     },
     {
         "name":"Comedia",
+        "info":"Que mejor forma de divertirse que riendo un poco",
+        "img":"https://concepto.de/wp-content/uploads/2018/09/comedia-e1536069171944.jpg",
         "movie":
         [
             {
@@ -63,7 +69,7 @@
             {
                 "id":"10",
                 "name":"Paul ",
-                "img":"https://pics.filmaffinity.com/Paul-801784289-large.jpg"
+                "img":"https://s3-eu-west-1.amazonaws.com/abandomedia/db/poster/db_posters_45904.jpg"
             },
             {
                 "id":"11",
@@ -79,6 +85,8 @@
     },
     {
         "name":"Fantasia",
+        "info":"Cuando nuestra imaginación se eleva aun más",
+        "img":"https://i0.wp.com/www.julianmarquina.es/wp-content/uploads/Libros-y-fantasia-1.jpg?fit=960%2C540&ssl=1",
         "movie":
         [
             {
@@ -94,28 +102,30 @@
             {
                 "id":"15",
                 "name":"Kimetsu no Yaiba: Mugen Ressha-hen",
-                "img":"https://pics.filmaffinity.com/Demon_Slayer_El_tren_infinito-940995741-large.jpg"
+                "img":"https://cdn.aprendejaponeshoy.com/18119/kimetsu-no-yaiba-mugen-ressha-hen-guardianes-de-la-noche-tren-infinito-novela-de-la-pelcula.jpg"
             },
             {
                 "id":"16",
                 "name":"Avengers: Endgame",
-                "img":"https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Avenger_Endgame_Poster_Oficial.png/revision/latest?cb=20190326185910&path-prefix=es"
+                "img":"https://cdn2.mediotiempo.com/uploads/media/2021/03/19/avengers-endgame-1.jpg"
             }
         ]
     },
     {
         "name":"Suspenso",
+        "info":"Y nuestras madres querian que no nos comieramos las uñas",
+        "img":"https://www.laxmasmusica.com/uploads/newsarticle/b1c62dd5a60c422e8fa328835926ef56/miedoweb.jpg",
         "movie":
         [
             {
                 "id":"17",
                 "name":"Don't Breathe 2",
-                "img":"https://pics.filmaffinity.com/No_respires_2-337597716-large.jpg"
+                "img":"https://play-lh.googleusercontent.com/0xve72dbtsEB6FYw_WJqz5LBLyoZxbBxRHjvDZrXznY3j01FBqgwgDlqLQ7a7fRGP3qoxbh8meaZJ92Kiaw"
             },
             {
                 "id":"18",
                 "name":"Escape Room: Tournament of Champions",
-                "img":"https://static.wikia.nocookie.net/doblaje/images/a/a5/Escape_room_2.jpg/revision/latest?cb=20210831053902&path-prefix=es"
+                "img":"https://images2.alphacoders.com/124/1245318.jpg"
             },
             {
                 "id":"19",
@@ -125,7 +135,7 @@
             {
                 "id":"20",
                 "name":"El hoyo",
-                "img":"https://pics.filmaffinity.com/El_hoyo-454438870-large.jpg"
+                "img":"https://es.web.img3.acsta.net/pictures/19/09/17/17/00/0735463.jpg"
             }
         ]
     }

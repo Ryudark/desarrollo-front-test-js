@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 import "./Login.css"
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { log } from '../../redux/action/actionLogin'
-import { Link } from 'react-router-dom'
-import Home from '../home/Home'
+import {useNavigate} from "react-router-dom"
 
 function Login() {
 
     const dispatch=useDispatch()
-
-    const enter=useSelector(state=> state)
+    const navigate=useNavigate()
 
     const [login, setlogin] = useState(
         {
@@ -26,7 +24,8 @@ function Login() {
         e.preventDefault()
         try {
             dispatch(log(login))
-            return (<Link to="/home"><Home /></Link>)
+            navigate( "/home", {replace:true})
+            // return (<Link to="/home"><Home /></Link>)
             
         } catch (error) {
             alert(error)
@@ -34,18 +33,20 @@ function Login() {
     }
 
     return (
-        <div className='divLogin'>
-        <h2>LOGIN</h2>
-        <form onSubmit={onSubmit}>  
-            <div>
-            <input onChange={handleChange} name="user" type="email" placeholder="Usuario" value={login.user}/>
+        <div >
+            <div className='divLogin'>
+            <h2>LOGIN</h2>
+            <form onSubmit={onSubmit}>  
+                <div>
+                <input onChange={handleChange} name="user" type="email" placeholder="Usuario" value={login.user}/>
+                </div>
+                <div>
+                <input onChange={handleChange} name="password" type="password" placeholder="password" value={login.password} />
+                </div>
+                <input type="submit" />
+                
+            </form>
             </div>
-            <div>
-            <input onChange={handleChange} name="password" type="password" placeholder="password" value={login.password} />
-            </div>
-            <input type="submit" />
-            
-        </form>
         </div>
     )
 }

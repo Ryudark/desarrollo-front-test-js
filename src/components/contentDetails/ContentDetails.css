@@ -49,8 +49,8 @@
 }
 
 .cardDetail img {
-    height: 410px;
-    width: 730px;
+    height: 50%;
+    width: 50%;
     vertical-align: middle;
     margin-bottom: 20px;
     padding: 0;
@@ -59,7 +59,7 @@
 }
 
 .cardDetail p{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 4%, 5%);
     font-size: 1.5rem;
     line-height: 2.3rem;
     align-items: center;
@@ -74,8 +74,8 @@
     padding-bottom: 1%;
 }
 
-.tituloElem {
-    color: #fff;
+.cardDetail h2{
+    color: rgb(10, 10, 10);
     font-size: 1.8em;
     font-weight: bold;
     margin-top: 2%;

@@ -26,6 +26,7 @@ function reducer(state, action) {
                 detail:action.payload
             }
         case GENRES_FILTER:
+            console.log(action.payload)
             return{
                 ...INITIAL_STATE,
                 genresFilter:action.payload

@@ -1,9 +1,9 @@
 .divLogin{
-    width: 400px;
-    height: 350px;
-    background-color: #4e4d4d;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    border-radius: 18px;
     margin: auto;
-    margin-top: 160px;
     box-shadow: 7px 13px 37px;
     padding: 20px 30px;
     color: white;
@@ -14,12 +14,13 @@
 
 .divLogin h2{
     margin: 0;
+    color: black;
     text-align: center;
     height: 40px;
 }
 
 .div input{
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 2px;
     padding: 4px 6px;
 }

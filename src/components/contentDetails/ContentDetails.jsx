@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router-dom";
 import { detailVideo } from "../../redux/action/actionInfo"
 import "./ContentDetails.css"
+import { Link } from 'react-router-dom'
 
 export default function ContentDetails() {
 
@@ -18,6 +19,8 @@ export default function ContentDetails() {
 
     return (
         <div className="cardDetail">
+            <Link to="/home">Home</Link>
+
             <h2>{info.name}</h2>
             <img src={info.img} alt={info.name} />
             <p>{info.description}</p>

@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <BrowserRouter>
-          <Index />
+        <BrowserRouter >
+          <div className='divFondo'>
+            <Index />
+          </div>
         </BrowserRouter>
       </Provider>
     </div>
