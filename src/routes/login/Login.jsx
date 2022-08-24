@@ -43,7 +43,7 @@ function Login() {
                 <div>
                 <input onChange={handleChange} name="password" type="password" placeholder="password" value={login.password} />
                 </div>
-                <input type="submit" />
+                <input type="submit" value="ingresar"/>
                 
             </form>
             </div>

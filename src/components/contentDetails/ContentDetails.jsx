@@ -22,7 +22,8 @@ export default function ContentDetails() {
             <Link to="/home">Home</Link>
 
             <h2>{info.name}</h2>
-            <img src={info.img} alt={info.name} />
+            {/* <img src={info.img} alt={info.name} /> */}
+            <iframe width="560" height="315" src={info.video} title="YouTube video player" frameborder="0"></iframe>
             <p>{info.description}</p>
             <h4>{info.company}</h4>
         </div>

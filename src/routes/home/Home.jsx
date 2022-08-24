@@ -30,20 +30,18 @@ export default function Home (){
     //     )
     // }
     return (
-        <div>
+        <div className='home'>
+            <NavBar />
             <div>
-                <NavBar />
-                <div>
-                    {info?.map(a=>
-                        <Link className='cardPresentation'
-                        to="/contentCategory"
-                        onClick={()=>contents(a.name)} key={a.name}>
-                        <h2 >{a.name}</h2>
-                        <img src={a.img} alt={a.name}/>
-                        <p >{a.info}</p>
-                        </Link>
-                    )}
-                </div>
+                {info?.map(a=>
+                    <Link className='cardPresentation'
+                    to="/contentCategory"
+                    onClick={()=>contents(a.name)} key={a.name}>
+                    <h2 >{a.name}</h2>
+                    <img src={a.img} alt={a.name}/>
+                    <p >{a.info}</p>
+                    </Link>
+                )}
             </div>
         </div>
         )
