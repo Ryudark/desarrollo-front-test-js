@@ -35,3 +35,28 @@
     border-radius: 2px;
     padding: 4px 6px;
 }
+
+.botonLogin {
+    width: 50%;
+    height: 3rem;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Staatliches", sans-serif;
+    color: #c4930cdc;
+    background-color: black;
+    border: 0.5rem solid white;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all ease 200ms;
+    text-decoration: none;
+}
+.botonLogin:hover {
+    background-color: rgb(206, 140, 40);
+    color: black;
+    transition: 0.5s;
+}
+
+.botonLogin:active {
+    transform: translateY(10%);
+}

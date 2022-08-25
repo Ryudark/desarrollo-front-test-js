@@ -1,18 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './NavBar.css'
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "./NavBar.css";
 
 export default function NavBar() {
+  
+  function logOut() {
+    window.location.reload();
+  }
 
   return (
-    <div className='navbar'>
+    <div className="navbar">
       <div>
-        <Link to="/home" >Home</Link>
+        <Link className="botonNavBar" to="/home">
+          Home
+        </Link>
       </div>
       <div>
-        <Link to="/about">About</Link>
+        <Link className="botonNavBar" to="/about">
+          About
+        </Link>
       </div>
-      
+      <div>
+        <button className="botonNavBar" onClick={logOut}>
+          Salir
+        </button>
+      </div>
     </div>
-  )
+  );
 }

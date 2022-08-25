@@ -1,37 +1,42 @@
-import { GENRES, GENRES_FILTER, GET_DETAIL, LOGIN } from '../../constants/Constants'
+import {
+    GENRES,
+    GENRES_FILTER,
+    GET_DETAIL,
+    LOGIN,
+} from "../../constants/Constants";
 
-const INITIAL_STATE={
-    user:false,
-    genres:[],
-    genresFilter:[],
-    detail:{}
-}
+const INITIAL_STATE = {
+    user: false,
+    genres: [],
+    genresFilter: [],
+    detail: {},
+};
 
-
-function reducer(state=INITIAL_STATE, action) {
-    switch(action.type){
+function reducer(state = INITIAL_STATE, action) {
+    switch (action.type) {
         case LOGIN:
             return {
                 ...state,
-                user:action.payload
-            }
+                user: action.payload,
+            };
         case GENRES:
             return {
                 ...state,
-                genres:action.payload
-            }
+                genres: action.payload,
+            };
         case GET_DETAIL:
-            return{
+            return {
                 ...state,
-                detail:action.payload
-            }
+                detail: action.payload,
+            };
         case GENRES_FILTER:
-            return{
+            return {
                 ...state,
-                genresFilter:action.payload
-            }
-        default: return state
+                genresFilter: action.payload,
+            };
+        default:
+            return state;
     }
 }
 
-export default reducer
+export default reducer;

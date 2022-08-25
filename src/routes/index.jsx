@@ -1,8 +1,8 @@
 import React from 'react';
-import Login from '../routes/login/Login';
 import {Route, Routes} from "react-router-dom";
 import {Navigate} from 'react-router-dom';
 
+import Login from '../routes/login/Login';
 import Home from './home/Home';
 import ContentDetails from './contentDetails/ContentDetails';
 import About from './about/About';
