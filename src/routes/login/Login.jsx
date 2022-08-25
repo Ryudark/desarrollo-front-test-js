@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import "./Login.css"
-import { useDispatch} from 'react-redux'
-import { log } from '../../redux/action/actionLogin'
-import {useNavigate} from "react-router-dom"
+import React, { useState } from 'react';
+import { useDispatch} from 'react-redux';
+import {useNavigate} from "react-router-dom";
+
+import { userLogin } from '../../redux/action/actionLogin';
+import "./Login.css";
 
 function Login() {
 
@@ -23,7 +24,7 @@ function Login() {
     function onSubmit(e){
         e.preventDefault()
         try {
-            dispatch(log(login))
+            dispatch(userLogin(login))
             navigate( "/home", {replace:true})
             // return (<Link to="/home"><Home /></Link>)
             
@@ -33,7 +34,7 @@ function Login() {
     }
 
     return (
-        <div >
+        <div className='center'>
             <div className='divLogin'>
             <h2>LOGIN</h2>
             <form onSubmit={onSubmit}>  

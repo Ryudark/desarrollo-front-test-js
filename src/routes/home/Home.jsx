@@ -4,31 +4,29 @@ import NavBar from '../../components/navBar/NavBar'
 import { genres, genresFilter } from '../../redux/action/actionInfo'
 import { Link } from 'react-router-dom'
 import './Home.css'
-
+import {useNavigate} from "react-router-dom"
 
 export default function Home (){
 
     const info= useSelector(state=>state?.genres)
 
-    const avaible=useSelector(state=>state?.user)
-    console.log(avaible)
+    const isLoged=useSelector(state=>state.user)
 
+    const navigate=useNavigate()
 
     const dispatch= useDispatch()
 
     useEffect(()=>{          
         dispatch(genres())
+        if(!isLoged){
+            navigate( "/login", {replace:true})
+        }
     })
 
     function contents(genre){
         dispatch(genresFilter(genre))
     }
 
-    // if(!avaible){
-    //     return (
-    //         <div>INGRESE POR FAVOR</div>
-    //     )
-    // }
     return (
         <div className='home'>
             <NavBar />

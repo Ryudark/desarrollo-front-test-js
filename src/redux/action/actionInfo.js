@@ -1,6 +1,6 @@
-import { GENRES, GENRES_FILTER, GET_DETAIL } from "../../components/constants/Constants";
-import data from '../../components/constants/videos.json';
-import info from '../../components/constants/info.json';
+import { GENRES, GENRES_FILTER, GET_DETAIL } from "../../constants/Constants";
+import data from '../../constants/videos.json';
+import info from '../../constants/info.json';
 
 export function genres(){
     return{
