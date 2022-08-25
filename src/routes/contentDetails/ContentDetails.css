@@ -1,35 +1,18 @@
-.load{
-    background-color: rgba(169, 169, 169, 0.144);
-    /* width: 100vw;
-    height: 100vh; */
-    /* background-attachment: fixed; */
-}
-
-.loading {
-    width: 100vw;
-    height: 100vh;
-    /* background-attachment: fixed; */
-}
 .fondoDetail{
-    /* background-image: url("../../imagenes/55864.gif"); */
     background-size: cover;
+    background-color: black;
     background-repeat: no-repeat;
     background-position: center;
-    /* width: 100vw;
-    height: 100vh; */
-    /* background-attachment: fixed; */
     overflow: auto;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: nowrap; */
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
 .cardDetail{
-    width: 60%;
-    /*height: 70%; */
+    width: 50%;
     background-position: center;
     display: flex;
     flex-direction: column;

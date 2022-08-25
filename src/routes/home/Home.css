@@ -35,3 +35,16 @@
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     padding-bottom: 1%;
 }
+
+.home{
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

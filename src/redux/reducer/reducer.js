@@ -1,4 +1,4 @@
-import { GENRES, GENRES_FILTER, GET_DETAIL, LOGIN } from '../../components/constants/Constants'
+import { GENRES, GENRES_FILTER, GET_DETAIL, LOGIN } from '../../constants/Constants'
 
 const INITIAL_STATE={
     user:false,

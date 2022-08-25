@@ -1,4 +1,4 @@
-.about {
+/* .about {
     width: 520px;
     height: 520px;
     background-color: white;
@@ -7,4 +7,42 @@
 
 .about h4{
     color: rgb(212, 121, 36);
+} */
+
+.centerAbout{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about{
+    width: 30rem;
+    height: 12rem;
+    background-color: white;
+    border-radius: 18px;
+    margin: auto;
+    box-shadow: 7px 13px 37px;
+    padding-top: 360px;
+    align-self: center;
+    justify-self: center;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about h4{
+    margin: 0;
+    color: black;
+    text-align: center;
+    height: 40px;
+}
+
+.about input{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 4px 6px;
 }

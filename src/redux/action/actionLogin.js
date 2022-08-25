@@ -1,5 +1,5 @@
-import { LOGIN } from "../../components/constants/Constants"
-import data from '../../components/constants/user.json';
+import { LOGIN } from "../../constants/Constants"
+import data from '../../constants/user.json';
 
 export function userLogin(payload){
 

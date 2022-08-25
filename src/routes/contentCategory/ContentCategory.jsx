@@ -15,7 +15,6 @@ export default function ContentCategory() {
     const filter= useSelector(state=>state.genresFilter)
     
     useEffect(()=>{
-        // console.log("first")
         if(!isLoged){
             navigate( "/login", {replace:true})
         }
