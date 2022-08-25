@@ -1,15 +1,16 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { genres, genresFilter } from '../../redux/action/actionInfo'
 import './NavBar.css'
+import House from "../../images/1_-_Home_256x256_35385.png"
 
 export default function NavBar() {
 
   return (
-    <div>
+    <div className='navbar'>
       <div>
-        <Link to="/home">Home</Link>
+        <Link to="/home" >{House}</Link>
+      </div>
+      <div>
         <Link to="/about">About</Link>
       </div>
       
